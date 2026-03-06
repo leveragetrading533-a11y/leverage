@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FREE Report: The Crypto Safety Net</title>
+    
+    <!-- GetResponse Analytics -->
+    <script type="text/javascript">
+    (function(m, o, n, t, e, r, _){
+            m['__GetResponseAnalyticsObject'] = e;m[e] = m[e] || function() {(m[e].q = m[e].q || []).push(arguments)};
+            r = o.createElement(n);_ = o.getElementsByTagName(n)[0];r.async = 1;r.src = t;r.setAttribute('crossorigin', 'use-credentials');_.parentNode .insertBefore(r, _);
+        })(window, document, 'script', 'https://an.gr-wcon.com/script/30cfc967-caae-478d-bd0c-0d0c732bdb1c/ga.js', 'GrTracking');
+    </script>
+    <!-- End GetResponse Analytics -->
+
+    <style>
+        :root {
+            --bg-color: #0a0a0a;
+            --card-bg: #161616;
+            --accent-color: #00ff41; /* Neon Crypto Green */
+            --text-color: #ffffff;
+            --sub-text: #b3b3b3;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            width: 90%;
+            padding: 40px 20px;
+        }
+        .hero-box {
+            background: var(--card-bg);
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 60px 40px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+        h1 {
+            font-size: 3.2rem;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+        h1 span {
+            color: var(--accent-color);
+            text-shadow: 0 0 15px rgba(0, 255, 65, 0.4);
+        }
+        p.subheadline {
+            font-size: 1.4rem;
+            color: var(--sub-text);
+            margin-bottom: 40px;
+            font-weight: 300;
+            line-height: 1.5;
+        }
+        .cta-button {
+            background: linear-gradient(135deg, #00ff41 0%, #008f25 100%);
+            color: #000;
+            font-size: 1.6rem;
+            font-weight: 900;
+            padding: 25px 60px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-transform: uppercase;
+            box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 35px rgba(0, 255, 65, 0.6);
+        }
+        /* Popup Styles */
+        #optin-popup {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.95);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+        .popup-content {
+            background: #1a1a1a;
+            padding: 50px 30px;
+            border-radius: 15px;
+            border: 2px solid var(--accent-color);
+            max-width: 550px;
+            width: 90%;
+            position: relative;
+            min-height: 350px;
+            box-shadow: 0 0 50px rgba(0, 255, 65, 0.2);
+        }
+        .close-icon {
+            position: absolute;
+            top: 15px; right: 20px;
+            color: #fff; font-size: 32px; cursor: pointer;
+            z-index: 1001;
+            line-height: 1;
+        }
+        .popup-header {
+            margin-bottom: 25px;
+        }
+        .popup-header h2 {
+            color: var(--accent-color);
+            margin: 0;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+        }
+        footer {
+            margin-top: 60px;
+            font-size: 0.85rem;
+            color: #444;
+        }
+        footer a { color: #666; text-decoration: none; margin: 0 12px; transition: color 0.2s; }
+        footer a:hover { color: var(--accent-color); }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            p.subheadline { font-size: 1.1rem; }
+            .cta-button { font-size: 1.2rem; padding: 20px 35px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="hero-box">
+            <h1>FREE Report Reveals: The <span>"Bulletproof"</span> Strategy Pro Traders Use to Defuse Risk & Wield Massive Leverage</h1>
+            <p class="subheadline">(PLUS - The Secret to Aggressively Weaponizing 150x Leverage to Hunt Whale-Sized Gains by Tonight)</p>
+            
+            <button class="cta-button" onclick="openPopup()">GET FREE INSTANT ACCESS</button>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Crypto Safety Net. All Rights Reserved.</p>
+            <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms</a> | <a href="disclaimer.html">Disclaimer</a>
+        </footer>
+    </div>
+
+    <!-- 2-Step Opt-in Popup -->
+    <div id="optin-popup">
+        <div class="popup-content">
+            <span class="close-icon" onclick="closePopup()">&times;</span>
+            
+            <div class="popup-header">
+                <h2>Where should we send your FREE report?</h2>
+                <p style="color: #888;">Enter your email below to unlock the 150x strategy.</p>
+            </div>
+
+            <!-- YOUR GETRESPONSE FORM -->
+            <getresponse-form form-id="5d9b42fe-3c62-44a8-a141-0f537bf5b542" e="1"></getresponse-form>
+            
+        </div>
+    </div>
+
+    <script>
+        function openPopup() { document.getElementById('optin-popup').style.display = 'flex'; }
+        function closePopup() { document.getElementById('optin-popup').style.display = 'none'; }
+        
+        // Close popup if clicking outside the content box
+        window.onclick = function(event) {
+            let modal = document.getElementById('optin-popup');
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
